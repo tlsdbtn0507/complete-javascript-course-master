@@ -52,4 +52,9 @@ state.user.isLoggedin = false;
 
 console.log(stateClone);
 console.log(stateDeepClone);//deepClone으로 인해 state의 변경으로도 stateDeepClone값 변경x
-//참고로 node폴더를 삭제하거나 다른 프로젝트를 클론해와도 npm i하면 
+//참고로 node폴더를 삭제하거나 다른 프로젝트를 클론해와도 npm i하면 설치가능
+
+//일부 메서드들을 폴리핑함
+import 'core-js/stable';
+//아래는 비동기 함수들 폴리핑
+import 'regenerator-runtime/runtime'
